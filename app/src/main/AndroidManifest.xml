@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myapplication.example.com.healthlifehack" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MENU" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MenuInf"
+            android:label="@string/app_name" >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MENUINF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.Menu" />
+        </activity>
+        <activity
+            android:name=".MenuInfMisc"
+            android:label="@string/app_name" >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MENUINF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.Menu" />
+        </activity>
+        <activity
+            android:name=".MenuInfPanic"
+            android:label="@string/app_name" >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MENUINF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.Menu" />
+        </activity>
+        <activity
+            android:name=".MenuInfSeizure"
+            android:label="@string/app_name" >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MENUINF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.Menu" />
+        </activity>
+        <activity
+            android:name=".Presc"
+            android:label="@string/app_name" >
+            <intent-filter>
+            <action android:name="android.intent.action.PRESC" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Infograph"
+            android:label="@string/app_name" >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MENUINF" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Notif"
+            android:label="@string/app_name" >
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="myapp.project.com.myapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

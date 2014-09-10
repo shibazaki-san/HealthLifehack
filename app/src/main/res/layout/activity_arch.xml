@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapplication.example.com.healthlifehack.Menu"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/archive"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/heart"
+        android:id="@+id/heartButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/panic_attack"
+        android:id="@+id/panicButton"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/heartButton"
+        android:layout_alignLeft="@+id/heartButton"
+        android:layout_alignStart="@+id/heartButton" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/seizure"
+        android:id="@+id/seiButton"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/panicButton"
+        android:layout_alignLeft="@+id/panicButton" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/misc"
+        android:id="@+id/miscButton"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/seiButton"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

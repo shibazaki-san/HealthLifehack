@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Health Lifehack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="archive">Archive</string>
+    <string name="heart">Heart</string>
+    <string name="panic_attack">Panic Attack</string>
+    <string name="seizure">Seizures</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="take_meds">Take Medicine</string>
+    <string name="amount">Amount</string>
+    <string name="time">Notes</string>
+</resources>
