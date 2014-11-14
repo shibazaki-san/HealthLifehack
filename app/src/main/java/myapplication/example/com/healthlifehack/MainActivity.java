@@ -18,7 +18,6 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         addButtonClickListener();
-        addPrescButtonListener();
 
 
     }
@@ -35,18 +34,6 @@ public class MainActivity extends ActionBarActivity {
         });
 
 
-    }
-
-    public void addPrescButtonListener()
-    {
-        Button btnPresc = (Button)findViewById(R.id.prescButton);
-        btnPresc.setOnClickListener(new OnClickListener(){
-            public void onClick(View arg)
-            {
-                Intent intent = new Intent(MainActivity.this, Notif.class);
-                startActivity(intent);
-            }
-        });
     }
 
 
